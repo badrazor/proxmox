@@ -46,7 +46,7 @@
     prompt: "PVE API password? "
     private: yes
   - name: "ks_url"
-    prompt: "KS Url? "
+    prompt: "Kickstart URL? "
     default: "https://raw.githubusercontent.com/badrazor/proxmox/master/http/centos7.cfg"
     private: no
   tasks:
