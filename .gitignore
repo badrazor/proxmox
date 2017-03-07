@@ -1,4 +1,6 @@
 venv
 .output
 packer_cache
+args.txt
+args2.txt
 
