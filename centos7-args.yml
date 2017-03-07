@@ -1,0 +1,4 @@
+-serial tcp:0.0.0.0:{{ port_number }},server,nowait
+-kernel /tmp/kernel
+-initrd /tmp/initrd
+-append "ks={{ ks_url }}"
