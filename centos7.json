@@ -9,6 +9,7 @@
       "iso_checksum_type": "sha256",
       "output_directory": ".output",
       "shutdown_command": "shutdown -P now",
+      "headless": "true",
       "disk_size": 8000,
       "format": "qcow2",
       "headless": false,
