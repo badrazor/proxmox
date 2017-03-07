@@ -12,7 +12,8 @@
       "headless": "true",
       "qemuargs": [
          [ "-m", "4444M" ],
-         [ "-nographic", "" ]
+         [ "-nographic", "" ],
+         [ "-vga", "std" ]
        ],
       "disk_size": 8000,
       "format": "qcow2",
