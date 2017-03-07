@@ -18,7 +18,7 @@
       "qemuargs": [
         [ "-m", "1024" ]
       ],
-      
+
       "disk_size": 32000,
       "format": "qcow2",
 
@@ -38,7 +38,7 @@
 
       "vm_name": "centos7",
       "net_device": "virtio-net",
-      "disk_interface": "virtio
+      "disk_interface": "virtio"
     }
   ]
 }
