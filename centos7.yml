@@ -4,6 +4,10 @@
 # Set vars when calling:
 # ansible-playbook -e "args_template=files/args-centos-gitlab-runner.ks" -e "kernel=http://ftp.hosteurope.de/mirror/centos.org/7/os/x86_64/isolinux/vmlinuz" -e "initrd=http://ftp.hosteurope.de/mirror/centos.org/7/os/x86_64/isolinux/initrd.img" ansible/playbooks/proxmox-kickseed.yml
 #
+# https://morph027.gitlab.io/post/pve-kickseed/
+# https://gitlab.com/snippets/1548093
+# https://gitlab.com/morph027/kickstart-gitlab-ci-multi-runner/raw/master/gitlab-runner.cfg
+# https://gitlab.com/snippets/1548095
 
 #-kernel /tmp/kernel -initrd /tmp/initrd -append "inst.stage2=http://ftp.byfly.by/pub/CentOS/7/os/x86_64/ inst.repo=http://ftp.byfly.by/pub/CentOS/7/os/x86_64/ inst.ks=/tmp/ks_vagrant.cfg rd.noverifyssl
 ---
@@ -43,6 +47,7 @@
     private: yes
   - name: "ks_url"
     prompt: "KS Url? "
+    default: "https://raw.githubusercontent.com/badrazor/proxmox/master/http/centos7.cfg"
     private: no
   tasks:
   - name: Random port number
