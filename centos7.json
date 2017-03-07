@@ -10,6 +10,7 @@
       "output_directory": ".output",
       "shutdown_command": "shutdown -P now",
       "headless": "true",
+      "qemuargs": [ "-nographics" ],
       "disk_size": 8000,
       "format": "qcow2",
       "headless": false,
