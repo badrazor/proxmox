@@ -11,7 +11,7 @@
       "shutdown_command": "shutdown -P now",
       "headless": "true",
       "qemuargs": [
-        [ "-m", "1024m" ],
+        [ "-m", "1024M" ],
         [ "-enable-kvm", "" ],
         [ "-display", "" ],
         [ "-redir", "" ]
