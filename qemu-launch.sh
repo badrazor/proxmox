@@ -2,8 +2,8 @@
 
 echo $@ > args.txt
 
-ARGS=$(echo $@ | sed -e 's|-display||g' -e 's|-redir||g')
+ARGS=$(echo $@ | sed -e 's|-display||g' -e 's|sdl||g' -e 's|-redir||g')
 
-echo $@ > args2.txt
+echo $ARGS > args2.txt
 
 exec /usr/bin/kvm $ARGS
