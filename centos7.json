@@ -11,8 +11,6 @@
       "shutdown_command": "shutdown -P now",
       "headless": "true",
       "qemuargs": [
-         [ "-m", "4444M" ],
-         [ "-nographic", "" ],
          [ "-vga", "std" ]
        ],
       "disk_size": 8000,
@@ -34,7 +32,7 @@
       "boot_wait": "5s",
       "boot_command":
       [
-        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter><wait>"
+        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos7.cfg<enter><wait>"
       ]
     }
   ]
